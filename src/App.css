@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,36 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+:root {
+  --default-color: #888;
+  --active-color: #f00;
+}
+
+.like-btn {
+  border: 1px solid black;
+  border-radius: 32px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  height: 30px;
+  padding: 4px 8px;
+  margin-bottom: 5px;
+  color: var(--default-color);
+  background-color: white;
+}
+
+.like-btn:hover {
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+
+.likedBtn, .likedBtn:hover {
+  color: #fff;
+  background-color: var(--active-color);
+  border-color: var(--active-color);
 }
